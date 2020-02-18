@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DATE</title>
+	</head>
+	<body>
+        <h1>Today</h1>
+        <% day_num = Time.now.day %>
+        <% year = Time.now.year %>
+        <% d = DateTime.new(Time.now.year, Time.now.month, Time.now.day) %>
+        <% day = d.strftime("%A") %>
+        <% month = d.strftime("%B") %>
+		<p><%= "The date is #{day}, #{month} #{day_num}, #{year}" %></p>
+	</body>
+</html>
+
+
+
+
